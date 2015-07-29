@@ -59,10 +59,10 @@ class GameController < ApplicationController
     @scissors_lost = Move.where({ :user_move => "scissors", :computer_wins => 1 }).count
     @scissors_tied = Move.where({ :user_move => "scissors", :tie => 1 }).count
 
-
+    @move_list = Move.all
     @move_count = Move.all.count
 
-    ordered_move = Move.order(:id)
+    @ordered_move = Move.all.order(:id)
 
     @one = Move.order(:id)[0]
     @two = Move.order(:id)[1]

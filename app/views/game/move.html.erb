@@ -98,83 +98,15 @@
           <th>Tie</th>
         </tr>
 
+        <% @ordered_move.each do |move| %>
         <tr>
-          <td><%= @one["user_move"] %></td>
-          <td><%= @one["computer_move"] %></td>
-          <td><%= @one["user_wins"] %></td>
-          <td><%= @one["computer_wins"] %></td>
-          <td><%= @one["tie"] %></td>
+          <td><%= move.user_move %></td>
+          <td><%= move.computer_move %></td>
+          <td><%= move.user_wins %></td>
+          <td><%= move.computer_wins %></td>
+          <td><%= move.tie %></td>
         </tr>
-        <tr>
-          <td><%= @two["user_move"] %></td>
-          <td><%= @two["computer_move"] %></td>
-          <td><%= @two["user_wins"] %></td>
-          <td><%= @two["computer_wins"] %></td>
-          <td><%= @two["tie"] %></td>
-        </tr>
-        <tr>
-          <td><%= @three["user_move"] %></td>
-          <td><%= @three["computer_move"] %></td>
-          <td><%= @three["user_wins"] %></td>
-          <td><%= @three["computer_wins"] %></td>
-          <td><%= @three["tie"] %></td>
-        </tr>
-        <tr>
-          <td><%= @four["user_move"] %></td>
-          <td><%= @four["computer_move"] %></td>
-          <td><%= @four["user_wins"] %></td>
-          <td><%= @four["computer_wins"] %></td>
-          <td><%= @four["tie"] %></td>
-        </tr>
-        <tr>
-          <td><%= @five["user_move"] %></td>
-          <td><%= @five["computer_move"] %></td>
-          <td><%= @five["user_wins"] %></td>
-          <td><%= @five["computer_wins"] %></td>
-          <td><%= @five["tie"] %></td>
-        </tr>
-        <tr>
-          <td><%= @six["user_move"] %></td>
-          <td><%= @six["computer_move"] %></td>
-          <td><%= @six["user_wins"] %></td>
-          <td><%= @six["computer_wins"] %></td>
-          <td><%= @six["tie"] %></td>
-        </tr>
-        <tr>
-          <td><%= @seven["user_move"] %></td>
-          <td><%= @seven["computer_move"] %></td>
-          <td><%= @seven["user_wins"] %></td>
-          <td><%= @seven["computer_wins"] %></td>
-          <td><%= @seven["tie"] %></td>
-        </tr>
-        <tr>
-          <td><%= @eight["user_move"] %></td>
-          <td><%= @eight["computer_move"] %></td>
-          <td><%= @eight["user_wins"] %></td>
-          <td><%= @eight["computer_wins"] %></td>
-          <td><%= @eight["tie"] %></td>
-        </tr>
-        <tr>
-          <td><%= @nine["user_move"] %></td>
-          <td><%= @nine["computer_move"] %></td>
-          <td><%= @nine["user_wins"] %></td>
-          <td><%= @nine["computer_wins"] %></td>
-          <td><%= @nine["tie"] %></td>
-        </tr>
-        <tr>
-          <td><%= @ten["user_move"] %></td>
-          <td><%= @ten["computer_move"] %></td>
-          <td><%= @ten["user_wins"] %></td>
-          <td><%= @ten["computer_wins"] %></td>
-          <td><%= @ten["tie"] %></td>
-        </tr>
-        <tr>
-          <td><%= @eleven["user_move"] %></td>
-          <td><%= @eleven["computer_move"] %></td>
-          <td><%= @eleven["user_wins"] %></td>
-          <td><%= @eleven["computer_wins"] %></td>
-          <td><%= @eleven["tie"] %></td>
-        </tr>
+        <% end %>
       </table>
     </div>
   </div>
